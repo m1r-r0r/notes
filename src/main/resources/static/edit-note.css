@@ -1,0 +1,43 @@
+.note-redactor-style {
+    width: 40%;
+}
+
+.edit-form-style {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.note-text-style {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    font-family: 'Arial';
+}
+
+.note-title-style {
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: 'Arial';
+}
+
+.note-date-style {
+    display: inline-block;
+    font-size: smaller;
+    width: 70%;
+}
+
+.note-save-style {
+    float: right;
+    display: inline-block;
+    width: 80px;
+}
+
+.note-delete-style {
+    display: inline-block;
+}
+
+.note-cancel-style {
+    float: right;
+    display: inline-block;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add note</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/edit-note.css">
+</head>
+<body>
+<div class="note-redactor-style">
+    <form class="edit-form-style" th:action="'/edit/' + ${note.id}" method="post">
+        <input class="note-title-style" type="text" name="note_title" placeholder="Title"
+            th:value="${note.title}"><br>
+        <textarea class="note-text-style" name="note_text" placeholder="Note text"
+            th:text="${note.notetext}"></textarea><br>
+        <div class="note-date-style"
+            th:text="'Last updated: ' + ${note.notedate}"></div><br>
+        <input class="note-save-style" type="submit" value="Update"><br>
+    </form>
+    <form class="note-delete-style" action="/note-list" method="get">
+        <input type="hidden" name="note-id" th:value="${note.id}">
+        <input type="submit" value="Delete"><br>
+    </form>
+    <form class="note-cancel-style" action="/note-list" method="get">
+        <input type="submit" value="Cancel"><br>
+    </form>
+</div>
+</body>
+</html>

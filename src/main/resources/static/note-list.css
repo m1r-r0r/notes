@@ -1,0 +1,40 @@
+.notes-field {
+    width: 40%
+}
+
+.header-style {
+    display: inline-block;
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.header-title-style {
+    display: inline-block;
+    width: 50%;
+    font-size: large;
+    font-weight: bold;
+}
+
+.add-note {
+    display: inline-block;
+    float: right;
+}
+
+.checkbox {
+    display: inline-block;
+    width: 5%;
+}
+
+.note-date {
+    font-size: smaller;
+    float: right;
+}
+
+.note-title {
+    display: inline-block;
+    width: 80%;
+}
+
+.note-next {
+    border-bottom: thin solid;
+}

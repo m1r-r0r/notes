@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Note list</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/note-list.css">
+</head>
+<body>
+<div>
+    <div class="header-style">
+        <div class="header-title-style">Note list:</div>
+        <form class="add-note" action="/add-note" method="get">
+            <input type="submit" value="Add note">
+        </form>
+    </div>
+    <form name="note-ids" method="get">
+        <div class="notes-field" th:each="note : ${noteList}">
+            <input class="checkbox" type="checkbox" th:name="note-id" th:value="${note.id}">
+            <a class="note-title"  th:text = "${note.title}" th:href="'/edit/' + ${note.id}"></a>
+            <div class="note-date"  th:text = "${note.notedate}"></div>
+            <div class="note-next"></div>
+            <br>
+        </div>
+        <input type="submit" value="Delete selected notes">
+    </form>
+</div>
+</body>
+</html>

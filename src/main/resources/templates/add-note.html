@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<head>
+    <title>Add note</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="edit-note.css">
+</head>
+<body>
+<div class="note-redactor-style">
+    <form class="edit-form-style" action="/add-note" method="post">
+        <input class="note-title-style" type="text" name="note_title" placeholder="Title"><br>
+        <textarea class="note-text-style" name="note_text" placeholder="Note text"></textarea><br>
+        <button class="note-save-style" type="submit">Save</button><br>
+    </form>
+    <form class="note-cancel-style" action="/note-list" method="get">
+        <input type="submit" value="Cancel"><br>
+    </form>
+</div>
+</body>
+</html>
